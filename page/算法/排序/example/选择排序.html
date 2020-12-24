@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择排序</title>
+  </head>
+  <body>
+    选择排序 原理：每次找出数组中最大/最小元素，放到头部或者尾部就好了
+    <div>
+      <input type="text" id="origin" style="width: 300px; height: 30px" />
+      <br />
+      <button id="sort">选择排序</button>
+
+      原始数据：
+    </div>
+  </body>
+  <script>
+    const btn = document.getElementById("sort");
+    const origin = [56, 22222, 78, 90, 2, 344, 555];
+    const arrInput = document.getElementById("origin");
+    arrInput.value = origin.join(",");
+
+    btn.addEventListener("click", () => {
+      const arr = arrInput.value.split(",").map((it) => it - 0);
+      console.log("原始数据", arr);
+      const result = selectSort(arr);
+      console.log("排序后的元素", result);
+    });
+
+    function selectSort(array) {
+      const len = array.length;
+      for (let i = 0; i < len - 1; i++) {
+        // 冒泡循环
+        for (let j = i + 1; j < len; j++) {
+          // 每次冒泡比较循环
+          if (array[j] > array[i]) {
+            // 交换位置
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
+        }
+        //console.log("每次冒泡后顺序", array);
+      }
+      return array;
+    }
+  </script>
+</html>
