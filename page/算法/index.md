@@ -14,6 +14,7 @@ function getLevel(arr) {
       }
     }
   });
+
   return level;
 }
 console.log(getLevel(a));
