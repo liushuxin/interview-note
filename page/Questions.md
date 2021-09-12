@@ -5,3 +5,5 @@
 ##### 2、 Handlebars
 
 ##### 3、 你有封装过 Axois 吗？主要是封装哪一方面？
+
+#### 4、嵌套对象的 state 修改，react 如何判断是否去更新，解决办法是什么？（update） ,immutability-helper
