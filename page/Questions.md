@@ -22,6 +22,10 @@
 
 ### requestAnimationFrame
 
-### package-lock.json vs yarn.lock
+### package-lock.json vs yarn.lock && pnpm
 
 ### lowcode + data visiual + auto UI test
+
+### 多个库的管理方式 Monorepo
+
+monorepo 最主要的好处是统一的工作流和 Code Sharing

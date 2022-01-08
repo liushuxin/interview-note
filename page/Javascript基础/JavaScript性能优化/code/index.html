@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="./index.js"></script>
+<body>
+    Test
+    <button id="btn">Add</button>
+    <script>
+        const arrList = [];
+        function test(){
+            for (let index = 0; index < 1000000; index++) {
+                document.body.appendChild(document.createElement('p'))
+            }
+            arrList.push(new Array(1000000).join('x'))
+                
+            }
+            document.getElementById('btn').addEventListener('click',()=>{
+                test()
+            })
+            
+    </script>
+    <script>
+        let a = 100;
+        function foo(b){
+            let a =2;
+            function baz(c){
+                console.log(a+b+c);
+            }
+            return baz;
+        }
+        let fn1 = foo(2);
+        fn1(3);
+    </script>
+</body>
+</html>
