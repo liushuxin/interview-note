@@ -2,7 +2,7 @@
 
 ## 总结整理（3 次练习原则）
 
-### ### [React](./page/React/index.md)
+### ### [React](./page/React/index.md) jjjjj
 
 ### [Promise 原理解析](https://github.com/liushuxin/interview-note/blob/main/page/Javascript%E5%9F%BA%E7%A1%80/Promise.md)
 
